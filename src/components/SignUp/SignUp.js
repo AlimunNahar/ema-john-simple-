@@ -3,8 +3,22 @@ import "./SignUp.css";
 
 const SignUp = () => {
   return (
-    <div>
-      <h2>this is Sign Up</h2>
+    <div className="form-container">
+      <h2 className="form-title">Login</h2>
+      <form>
+        <div className="form-control">
+          <label htmlFor="email">Email</label>
+          <input type="email" name="email" id="" required />
+        </div>
+        <div className="form-control">
+          <label htmlFor="password">Password</label>
+          <input type="password" name="password" id="" required />
+        </div>
+        <input className="btn-submit" type="submit" value="Login" />
+        <p>
+          New to ema john? Please <Link to="/signup">Create a New Account</Link>
+        </p>
+      </form>
     </div>
   );
 };
